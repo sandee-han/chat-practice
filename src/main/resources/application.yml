@@ -1,3 +1,6 @@
 server:
   port: 8020
 
+logging:
+  level:
+    com.chat.practice.chatapppractice: debug
