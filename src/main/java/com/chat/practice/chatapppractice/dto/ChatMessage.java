@@ -1,2 +1,4 @@
-package com.chat.practice.chatapppractice.dto;public class ChatMessage {
+package com.chat.practice.chatapppractice.dto;
+
+public class ChatMessage {
 }
