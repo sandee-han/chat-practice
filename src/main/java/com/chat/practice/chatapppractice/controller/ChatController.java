@@ -31,14 +31,13 @@ public class ChatController {
                 new WriteMessageResponse(message.getId()));
     }
 
-
-
     @GetMapping("/messages")
     @ResponseBody
-    public RsData<List<ChatMessage>> getMessage() {
+    public RsData<MessageResponse> getMessage() {
         return new RsData<>(
                 "S-1",
                 "성공",
-                chatMessages);
+                new MessageResponse(chatMessages, chatMessages.size())
+        );
     }
 }
